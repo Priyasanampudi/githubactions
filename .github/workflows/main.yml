@@ -33,3 +33,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           az login --service-principal --username a70c9bf0-097f-4221-9c21-5d7c98b2e1ff --password fBK7Q~UFwv5AQ~hbNNgb6HoR3CfPydWXANSTA --tenant fd41ee0d-0d97-4102-9a50-c7c3c5470454
+    
+      - name: Run a one-line script
+        run: terraform plan 
