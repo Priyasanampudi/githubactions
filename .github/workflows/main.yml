@@ -32,7 +32,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          az login,
-          az account set --subscription "M0173",
+          az login --service-principal -u 26e20eec-a739-41e8-960f-db6851f36d97 -p c1e7c5a9-2650-43f3-820c-2ecf74d05dc8 --tenant fd41ee0d-0d97-4102-9a50-c7c3c5470454,
           terraform plan,
           terraform apply.
